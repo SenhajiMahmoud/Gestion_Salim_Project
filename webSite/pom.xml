@@ -11,6 +11,7 @@
   <packaging>war</packaging>
   <name>webSite Maven Webapp</name>
   <url>http://maven.apache.org</url>
+  
   <properties>
 		<spring.version>4.2.4.RELEASE</spring.version>
 		<spring.security.version>4.0.1.RELEASE</spring.security.version>
