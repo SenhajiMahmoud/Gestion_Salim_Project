@@ -1,4 +1,3 @@
-com\Pizzeria\models\Test.class
 com\Pizzeria\models\User.class
 com\Pizzeria\dao\ServicesImpl.class
 com\Pizzeria\models\Candidature.class
