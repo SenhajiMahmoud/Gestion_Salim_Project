@@ -1,0 +1,115 @@
+.reseaux{
+	height: 50px;
+	width: 90px;
+	float: right;
+}
+
+a{
+	outline:none;
+	text-decoration:none;
+	cursor:pointer;
+}
+
+ul {
+	margin:0 0 18px;
+	list-style-position:inside;
+}
+
+ul li {
+	margin:0;
+	padding:0;
+	list-style: none;
+	line-height:24px;
+}
+
+	/* headerInner */
+.header_inner {
+	position:relative;
+	width:100%;
+}
+
+	/* ---- */
+	/* wrap_social_icons */
+	
+.wrap_social_icons {
+	position:absolute;
+	right:0;
+	top:40px;
+	display:block;
+	min-width:100%;
+	z-index:300;
+}
+
+.wrap_social_icons ul {
+	overflow:hidden;
+	padding:0 0 5px;
+	width:100%;
+	text-align:right;
+    height:30px;
+}
+
+.wrap_social_icons ul li{
+	display:inline-block;
+	zoom:1;
+	*display:inline;
+	list-style:none outside none;
+	margin:5px 3px 3px 4px;
+	padding:0;
+	transition:all 0.3s ease-in 0s;
+	-webkit-transition:all 0.3s ease-in 0s;
+	-moz-transition:all 0.3s ease-in 0s;
+	-ms-transition:all 0.3s ease-in 0s;
+	-o-transition:all 0.3s ease-in 0s;
+}
+
+.wrap_social_icons ul li:hover{
+	-webkit-transition:all 0.02s;
+	-moz-transition:all 0.02s;
+	-ms-transition:all 0.02s;
+	-o-transition:all 0.02s;
+	transition:all 0.02s;
+}
+
+.wrap_social_icons ul li a img{
+	width:30px;
+	height:28px;
+}
+
+.wrap_social_icons ul li a {display:block;}
+
+.wrap_social_icons ul {
+	overflow:hidden;
+	padding:0 0 5px;
+	width:100%;
+	text-align:right;
+    height: 40px;
+}
+
+.reseaux .social_icons li {
+	background-color:#e2e3e4;
+	background-color:rgba(58, 69, 75, 0.15);
+}
+
+.reseaux .social_icons li {
+	background-color:#e2e3e4;
+	background-color:rgba(58, 69, 75, 1);
+	border-radius: 8px;
+}
+
+.reseaux .wrap_social_icons {
+	    top: 5px;
+	    right: 40px;
+}
+
+.reseaux .social_icons li:nth-child(1):hover, #footer .social_icons li:nth-child(2):hover {background-color:#73b6d7;}
+.reseaux .social_icons li:nth-child(2):hover, #footer .social_icons li:nth-child(3):hover {background-color:#3b5998;}
+
+    @media only screen and (max-width : 1023px) {
+	    .reseaux>.header_inner {
+		    height: auto;
+	    }
+	    .reseaux .wrap_social_icons {
+		    top: auto;
+		    right: auto;
+	    }
+    }

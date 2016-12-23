@@ -37,7 +37,7 @@ public class WebSocketController {
 	}
 	
 	@RequestMapping("/envMessage")
-	public String Message(@RequestBody Notification u) throws MessagingException{
+	public String MessageEnv(@RequestBody Notification u) throws MessagingException{
 	 
 		System.out.println("ok");
 		template.convertAndSend("/topic/notification", new NotificationService(u.getName() + ',' + u.getMessage()));
