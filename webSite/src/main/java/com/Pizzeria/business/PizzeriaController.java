@@ -195,8 +195,8 @@ public class PizzeriaController {
 		}
 	
 	@RequestMapping(value = "addCandidature", method = RequestMethod.POST)
-	public String AjoutCandidature(@ModelAttribute Candidature d) throws MessagingException {
-//		service.add(d);
+	public String addCandidature(@ModelAttribute Candidature d) throws MessagingException {
+		service.add(d);
 		envoiMailCandidat(d.getEmail(), "Pizzeria_Win_Win@hotmail.com", d);
 		envoiMailAdmin("sema_ma@hotmail.fr", "Pizzeria_Win_Win@hotmail.com", d);
 		

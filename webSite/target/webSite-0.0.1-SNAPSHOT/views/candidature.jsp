@@ -6,9 +6,9 @@
 <title>
 	<spring:message  code='candidat.title' />
 </title>
-	<link rel="stylesheet" href="site/css/StyleCandidature.css">
-	<link rel="stylesheet" href="site/css/navBar.css">
-	<link rel="stylesheet" href="site/css/FormCSS.css">
+	<link rel="stylesheet" href="site/Candidature/CSS/StyleCandidature.css">
+	<link rel="stylesheet" href="site/Commun/CSS/navBar.css">
+	<link rel="stylesheet" href="site/Candidature/CSS/FormCSS.css">
 	
 	
 		<script type="text/javascript">
@@ -34,8 +34,7 @@
 	<div id="loading" style="display: none">
 		<div class="PosLogoText">
 			<span class="envoiEnCours">Envoi En cours...</span>
-			<span class="imgpos"> <img alt="Win" src="site/img/win.png">
-			</span>
+			<span class="imgpos"> <img alt="Win" src="site/Commun/Images/win.png"></span>
 		</div>
 	</div>
 
@@ -222,6 +221,5 @@
 	
 	<jsp:include page="../views/Footer.jsp" />
 	 
-	<!-- <script src="site/js/mousScrollFluide.js" ></script> -->
 </body>
 </html>

@@ -2,7 +2,7 @@
 <html>
 <head>
 <title>Galerie</title>
-<link rel="stylesheet" href="site/css/navBar.css">
+<link rel="stylesheet" href="site/Commun/CSS/navBar.css">
 
 </head>
 <body>

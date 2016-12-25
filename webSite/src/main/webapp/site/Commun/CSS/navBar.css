@@ -1,0 +1,19 @@
+#infoNav{
+	width: auto;
+	height: 30px;
+	margin-top: 70px;
+	font-size: 15px;
+	font-family: inherit;
+	
+	
+}
+#separator{
+	border-bottom: 1px solid #111111;
+	width: 1000px;
+	margin-left: 200px;
+	margin-right: 50px;
+}
+.title{
+	padding-top:8px;
+	margin-left: 250px; 
+}

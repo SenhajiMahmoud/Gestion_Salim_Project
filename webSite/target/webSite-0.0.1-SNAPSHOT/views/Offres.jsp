@@ -2,8 +2,7 @@
 <html>
 <head>
 <title>Offres</title>
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="site/css/navBar.css">
+<link rel="stylesheet" href="site/Commun/CSS/navBar.css">
 </head>
 <body>
 <jsp:include page="../views/header.jsp" />
