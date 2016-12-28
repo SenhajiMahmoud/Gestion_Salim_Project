@@ -60,10 +60,10 @@ public class NotificationController {
 		}
 		if(u.getTypeAlert() == TypeNotification.Facture){
 			System.out.println("------>Facture");
-			envoiMail("test_pds@hotmail.com", "test_pds@hotmail.com", infos);
+			envoiMail("sema_ma@hotmail.fr", "Pizzeria_Win_Win@hotmail.com", infos);
 		}
 		template.convertAndSend("/topic/notification", new NotificationService(u.getUserName() + ',' + u.getNotificationDescription()));
-		return "sample";
+		return "decNotif";
 	}
 
 	public void envoiMail(String to, String from, String infos) throws MessagingException {
@@ -80,7 +80,7 @@ public class NotificationController {
 	
 	private String factureConstruct(Notification notif){
 		
-		return "<div style='margin-left: 500px'>"
+		return "<div>"
 	    + "<h1>Karco Reservation Facture!</h1>"
 	    + "<table>"
 		+ "<tr><td><h3>Paiment</h3></td></tr>"

@@ -36,13 +36,8 @@ public class PizzeriaController {
 	@Autowired
 	private Services service;
 //	private List<Candidature> ListCand;
-//	@Autowired
-//	private MailSender mailSender;
-	@Autowired
-	//private JavaMailSender mailSenders;
 
-	
-	
+
 	@RequestMapping(value = "/connexionPage", method = RequestMethod.GET)
 	public String connexionPage() {
 		return "login";
@@ -164,16 +159,6 @@ public class PizzeriaController {
 	
 	
 	
-//	@RequestMapping(value = "ListCandidature")
-//	public ModelAndView List(@ModelAttribute Candidature d) {
-//		
-//		ModelAndView model = new ModelAndView("rep");
-//		ListCand = service.list();
-//		model.addObject("list", ListCand);
-//		return model;
-//		
-//	}
-	
 
 	
 	
@@ -183,6 +168,21 @@ public class PizzeriaController {
 	
 	
 	
+	
+	
+	
+	
+	//	@RequestMapping(value = "ListCandidature")
+//	public ModelAndView List(@ModelAttribute Candidature d) {
+//		
+//		ModelAndView model = new ModelAndView("rep");
+//		ListCand = service.list();
+//		model.addObject("list", ListCand);
+//		return model;
+//		
+//	}
+
+
 //	@RequestMapping(value = "/test", method = RequestMethod.POST)
 //	public String save(@RequestParam(value="cv") MultipartFile cv
 //															, @RequestParam(value="lettre") MultipartFile lettre, Model model
