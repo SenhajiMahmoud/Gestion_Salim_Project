@@ -1,6 +1,3 @@
-com\Pizzeria\models\User.class
 com\Pizzeria\dao\ServicesImpl.class
-com\Pizzeria\models\Candidature.class
 com\Pizzeria\dao\Services.class
-com\Pizzeria\models\Notification.class
 com\Pizzeria\services\NotificationService.class

@@ -17,6 +17,13 @@
         <url-pattern>/winwin/*</url-pattern>
 
     </servlet-mapping>
+    
+    <servlet-mapping>
+    
+        <servlet-name>dispatcher</servlet-name>
+        <url-pattern>*.do</url-pattern>
+
+    </servlet-mapping>
 
   <context-param>
         <param-name>contextConfigLocation</param-name>
@@ -25,10 +32,6 @@
         	/WEB-INF/dispatcher-servlet.xml
         	/WEB-INF/connexionBase.xml
         	/WEB-INF/Mail.xml
-        	/WEB-INF/i18n.xml
-			/WEB-INF/fileUpload.xml
-        	
-        	/WEB-INF/WebSockett.xml
         	
         </param-value>
         

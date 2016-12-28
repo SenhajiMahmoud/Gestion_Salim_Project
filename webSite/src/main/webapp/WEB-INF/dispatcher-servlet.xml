@@ -18,26 +18,29 @@
 
 
 	<context:annotation-config />
+	
+	  <tx:annotation-driven /> 
+	
+	<mvc:annotation-driven />
 
 	<context:component-scan base-package="com.Pizzeria" />
 
 	<context:property-placeholder location="classpath:configApp.properties" />
-	
-	<tx:annotation-driven />
-	
-	<mvc:annotation-driven />
 
 	<bean id="transactionManager"
 		class="org.springframework.orm.hibernate4.HibernateTransactionManager">
 		<property name="sessionFactory" ref="sessionFactory" />
 	</bean>
+	
 	 <bean id="handlerMapping" class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping">
     	<property name="alwaysUseFullPath" value="true"></property>
 	</bean>
+	
 	<bean id="multipartResolver"
 		class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
 		<property name="maxUploadSize" value="${config.maxUploadSize}" />
 	</bean>
+	
 	<bean id="messageSource"
 		class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
 		<property name="basename" value="classpath:messages" />
@@ -54,8 +57,6 @@
 	<bean id="localeResolver"
 		class="org.springframework.web.servlet.i18n.CookieLocaleResolver" />
 	
-	
-
 	<websocket:message-broker
 		application-destination-prefix="/app">
 		<websocket:stomp-endpoint path="/hello">
@@ -73,6 +74,5 @@
 			<value>.jsp</value>
 		</property>
 	</bean>
-
 
 </beans>

@@ -9,7 +9,10 @@
 	    href='site/Commun/CSS/resSociaux.css'
 	    type='text/css' 
         media='screen' />
-		
+		<script type="text/javascript">
+			var s = document.getElementById("langSwitchh");
+			
+		</script>
 </head>
 <body>
 	
@@ -68,7 +71,7 @@
 					
 					<div class="page-header__lang-switch lang-switch cc-dropdown" style="margin-top: 20px;">
 							
-							<a href="#" class="cc-dropdown__button lang-switch__button">
+							<a href="#" id="langSwitchh" class="cc-dropdown__button lang-switch__button">
 			                    <i class="lang-switch__globe"></i>
 			                    <span class="lang-switch__current"><spring:message code='Menu.langue' /></span>
 			                    <i class="icon-caret-small--blue"></i>

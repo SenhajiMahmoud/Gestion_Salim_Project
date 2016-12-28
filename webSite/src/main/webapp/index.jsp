@@ -23,7 +23,7 @@
 			<div class="menu">
 				<ul class="page-header-nav">
 					<li class="page-header-nav__item is_mobile-hidden">
-						<a href="winwin/Galerie" class="page-header-nav__link" >Galerie</a>
+						<a href="Galerie.do" class="page-header-nav__link" >Galerie</a>
 					</li>
 					
 					<li class="page-header-nav__item is_mobile-hidden">

@@ -121,10 +121,11 @@ public class NotificationController {
 	
 	@RequestMapping(value = "addCandidature", method = RequestMethod.POST)
 	public String addCandidature(@ModelAttribute Candidature d) throws MessagingException {
+		System.out.println("Candidature");
 		service.add(d);
-		envoiMailCandidat(d.getEmail(), "Pizzeria_Win_Win@hotmail.com", d);
+	 	envoiMailCandidat(d.getEmail(), "Pizzeria_Win_Win@hotmail.com", d);
 		envoiMailAdmin("sema_ma@hotmail.fr", "Pizzeria_Win_Win@hotmail.com", d);
-		
+		 
 		return "RepCandidature";
 	}
 	

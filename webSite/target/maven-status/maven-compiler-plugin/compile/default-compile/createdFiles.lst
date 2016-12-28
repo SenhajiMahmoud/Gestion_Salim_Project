@@ -1,2 +1,4 @@
 com\Pizzeria\business\PizzeriaController.class
-com\Pizzeria\business\WebSocketController.class
+com\Pizzeria\business\EventController.class
+com\Pizzeria\business\NotificationController$1.class
+com\Pizzeria\business\NotificationController.class

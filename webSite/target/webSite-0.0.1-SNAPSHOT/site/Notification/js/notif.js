@@ -43,12 +43,12 @@
 		
 	}
 	
-	$('.add').click(function(event){
+	//$('.add').click(function(event){
 		
-		event.preventDefault();
-		$('body').notif({title:"monTitre", content:'monContenu', icon:'&#128276;', timeout:2000});
+		//event.preventDefault();
+	//	$('body').notif({title:"monTitre", content:'monContenu', icon:'&#128276;', timeout:2000});
 
-	})
+	//})
 	
 	
 })(jQuery)
