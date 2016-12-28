@@ -13,16 +13,13 @@
 
 	<mvc:annotation-driven />
 
-	<websocket:message-broker application-destination-prefix="/app" path-matcher="pathMatcher">
-        <websocket:stomp-endpoint path="/hello">
-            <websocket:sockjs />
-        </websocket:stomp-endpoint>
-        <websocket:simple-broker prefix="/topic"/>
-    </websocket:message-broker> 
-	
-	 <bean id="pathMatcher" class="org.springframework.util.AntPathMatcher">
-    	<constructor-arg index="0" value="." />
-  	</bean>
+	<websocket:message-broker
+		application-destination-prefix="/app">
+		<websocket:stomp-endpoint path="/hello">
+			<websocket:sockjs />
+		</websocket:stomp-endpoint>
+		<websocket:simple-broker prefix="/topic" />
+	</websocket:message-broker>
 
 
 </beans>

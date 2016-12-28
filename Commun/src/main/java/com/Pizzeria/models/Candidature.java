@@ -48,54 +48,56 @@ public class Candidature implements Serializable {
 	private Long codepostale;
 
 	@Column(name = "Ville")
-	private String Ville;
+	private String ville;
 
 	@Column(name = "Email")
-	private String Email;
+	private String email;
 
 	@Column(name = "Telephone")
-	private String Tel;
+	private String tel;
 
 	@Column(name = "Experience")
-	private String Experience;
+	private String experience;
 
 	@Column(name = "enPoste")
 	private String enPoste;
 
 	@Column(name = "Disponibilite")
-	private String Disponibilite;
+	private String disponibilite;
 
 	@Column(name = "Langues")
-	private String Langues;
+	private String langues;
 
 	@Column(name = "PermisB")
-	private String PermisB;
+	private String permisB;
 
 	@Column(name = "vehicule")
 	private String vehicule;
 
 	public Candidature() {
+		super();
 	}
 
-	public Candidature(int id, String civilite, String nom, String prenom, String adresse, String dateNaissance,
-			Long codepostale, String ville, String email, String tel, String experience, String enPoste,
-			String disponibilite, String langues, String permisB, String vehicule) {
+	public Candidature(int id, String civilite, String poste, String nom, String prenom, String adresse,
+			String dateNaissance, Long codepostale, String ville, String email, String tel, String experience,
+			String enPoste, String disponibilite, String langues, String permisB, String vehicule) {
 		super();
 		this.id = id;
 		this.civilite = civilite;
+		this.poste = poste;
 		this.nom = nom;
 		this.prenom = prenom;
 		this.adresse = adresse;
 		this.dateNaissance = dateNaissance;
 		this.codepostale = codepostale;
-		Ville = ville;
-		Email = email;
-		Tel = tel;
-		Experience = experience;
+		this.ville = ville;
+		this.email = email;
+		this.tel = tel;
+		this.experience = experience;
 		this.enPoste = enPoste;
-		Disponibilite = disponibilite;
-		Langues = langues;
-		PermisB = permisB;
+		this.disponibilite = disponibilite;
+		this.langues = langues;
+		this.permisB = permisB;
 		this.vehicule = vehicule;
 	}
 
@@ -164,35 +166,35 @@ public class Candidature implements Serializable {
 	}
 
 	public String getVille() {
-		return Ville;
+		return ville;
 	}
 
 	public void setVille(String ville) {
-		Ville = ville;
+		this.ville = ville;
 	}
 
 	public String getEmail() {
-		return Email;
+		return email;
 	}
 
 	public void setEmail(String email) {
-		Email = email;
+		this.email = email;
 	}
 
 	public String getTel() {
-		return Tel;
+		return tel;
 	}
 
 	public void setTel(String tel) {
-		Tel = tel;
+		this.tel = tel;
 	}
 
 	public String getExperience() {
-		return Experience;
+		return experience;
 	}
 
 	public void setExperience(String experience) {
-		Experience = experience;
+		this.experience = experience;
 	}
 
 	public String getEnPoste() {
@@ -204,27 +206,27 @@ public class Candidature implements Serializable {
 	}
 
 	public String getDisponibilite() {
-		return Disponibilite;
+		return disponibilite;
 	}
 
 	public void setDisponibilite(String disponibilite) {
-		Disponibilite = disponibilite;
+		this.disponibilite = disponibilite;
 	}
 
 	public String getLangues() {
-		return Langues;
+		return langues;
 	}
 
 	public void setLangues(String langues) {
-		Langues = langues;
+		this.langues = langues;
 	}
 
 	public String getPermisB() {
-		return PermisB;
+		return permisB;
 	}
 
 	public void setPermisB(String permisB) {
-		PermisB = permisB;
+		this.permisB = permisB;
 	}
 
 	public String getVehicule() {
@@ -238,5 +240,7 @@ public class Candidature implements Serializable {
 	public static long getSerialversionuid() {
 		return serialVersionUID;
 	}
+
+	 
 
 }

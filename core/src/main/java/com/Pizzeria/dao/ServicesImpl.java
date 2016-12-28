@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.Pizzeria.models.Candidature;
+import com.Pizzeria.models.Event;
 
 /**
  * @author Mahmoud
@@ -39,5 +40,12 @@ public class ServicesImpl implements Services{
 		sql.addEntity(Candidature.class);
 		List<Candidature> candidats = sql.list();
 		return candidats;
+	}
+
+	@Override
+	public List<Event> getEvent() {
+		
+		
+		return null;
 	}
 }

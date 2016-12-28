@@ -13,7 +13,7 @@
 
     <servlet-mapping>
         <servlet-name>dispatcher</servlet-name>
-        <url-pattern>*.do</url-pattern>
+        <url-pattern>/winwin/*</url-pattern>
 		
 
     </servlet-mapping>

@@ -26,7 +26,6 @@ import com.Pizzeria.models.Notification;
 import com.Pizzeria.services.NotificationService;
 
 
-
 /**
  * @author Mahmoud
  *
@@ -40,7 +39,7 @@ public class PizzeriaController {
 //	@Autowired
 //	private MailSender mailSender;
 	@Autowired
-	private JavaMailSender mailSenders;
+	//private JavaMailSender mailSenders;
 
 	
 	
@@ -162,46 +161,7 @@ public class PizzeriaController {
 		return model;
 	}
 
-	public void envoiMailAdmin(String to, String from, Candidature d) throws MessagingException{
-		MimeMessage mimeMessage = mailSenders.createMimeMessage();
-		MimeMessageHelper helper = new MimeMessageHelper(mimeMessage, false, "utf-8");
-		String messagetoAdmin = "<h1 style='color:#8A2BE2;'>Pizzeria Win-Win!</h1> "
-				+ "<h3>Bonjour,<br/><br/>" 
-						+ d.getCivilite() + " " + d.getNom() + " " +  d.getPrenom()  
-							+ " vient de postuler pour un poste de " + d.getPoste() + "</h3>";
-		mimeMessage.setContent(messagetoAdmin, "text/html");
-		helper.setTo(to);
-		helper.setSubject("Candidature " + d.getPoste());
-		helper.setFrom(from);
-		mailSenders.send(mimeMessage);
-		
-	}
 	
-	public void envoiMailCandidat(String to, String from, Candidature d) throws MessagingException{
-			MimeMessage mimeMessage = mailSenders.createMimeMessage();
-			MimeMessageHelper helper = new MimeMessageHelper(mimeMessage, false, "utf-8");
-			String MessagetoCandidat = "<h1 style='color:#8A2BE2;'>Pizzeria Win-Win!</h1> "
-								+ "<h3>Bonjour, " 
-								+ d.getCivilite() + " " + d.getNom() + " " +  d.getPrenom()  
-								+ " Merci pour votre candidature pour le poste " + d.getPoste() 
-								+ " votre candidature a été transmis au responsable" 
-								+ " de recrutement qui va vous repondre dans les brefs delais</h3>"
-								+ "  Très Cordialement.";
-			mimeMessage.setContent(MessagetoCandidat, "text/html");
-			helper.setTo(to);
-			helper.setSubject("Candidature " + d.getPoste());
-			helper.setFrom(from);
-			mailSenders.send(mimeMessage);
-		}
-	
-	@RequestMapping(value = "addCandidature", method = RequestMethod.POST)
-	public String addCandidature(@ModelAttribute Candidature d) throws MessagingException {
-		service.add(d);
-		envoiMailCandidat(d.getEmail(), "Pizzeria_Win_Win@hotmail.com", d);
-		envoiMailAdmin("sema_ma@hotmail.fr", "Pizzeria_Win_Win@hotmail.com", d);
-		
-		return "RepCandidature";
-	}
 	
 	
 //	@RequestMapping(value = "ListCandidature")
@@ -214,35 +174,7 @@ public class PizzeriaController {
 //		
 //	}
 	
-//	@RequestMapping(value="sendEmail", method=RequestMethod.POST)
-//	public String doSendEmail(HttpServletRequest request) throws MessagingException{
-		 // takes input from e-mail form
-//        String recipientAddress = request.getParameter("recipient");
-//        String subject = request.getParameter("subject");
-//        String message = request.getParameter("message");
-         
-//        envoiMail(recipientAddress,subject, message);
-//        envoiMailHTML(); 
-//		return "sendEMail";
-//	}
-	
-//	public void envoiMail(String recipientAddress, String subject, String message) throws MessagingException{
-//		 SimpleMailMessage email = new SimpleMailMessage();
-//	        email.setFrom("Pizzeria_Win_Win@hotmail.com");
-//	        email.setTo(recipientAddress);
-//	        email.setSubject(subject);
-//	        email.setText(message);
-//	        mailSender.send(email);
-//	}
-	
-//	public void envoiMailMu(String[] recipientAddress, String subject, String message) throws MessagingException{
-//		 SimpleMailMessage email = new SimpleMailMessage();
-//	        email.setFrom("Pizzeria_Win_Win@hotmail.com");
-//	        email.setTo(recipientAddress);
-//	        email.setSubject(subject);
-//	        email.setText(message);
-//	        mailSender.send(email);
-//	}
+
 	
 	
 	

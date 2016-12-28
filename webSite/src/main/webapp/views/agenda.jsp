@@ -1,17 +1,17 @@
-<!doctype html>
+<!DOCTYPE HTML>
+<html>
 <head>
 <meta http-equiv="Content-type" content="text/html; charset=utf-8">
 <title>Agenda</title>
 
+<link rel="stylesheet" href="site/Agenda/css/dhtmlxscheduler.css" type="text/css" media="screen" title="no title" charset="utf-8">
 <script src="site/Agenda/js/dhtmlxscheduler.js" type="text/javascript" charset="utf-8"></script>
+
 <script src="site/Agenda/js/dhtmlxscheduler_limit.js" type="text/javascript" charset="utf-8"></script>
 <script src="site/Agenda/js/dhtmlxscheduler_minical.js" type="text/javascript" charset="utf-8"></script>
-<script src="site/Agenda/js/Config.js" type="text/javascript" charset="utf-8"></script>
-
-<link rel="stylesheet" href="site/Agenda/css/dhtmlxscheduler.css" type="text/css" media="screen" title="no title" charset="utf-8">
+<script src="site/Agenda/js/locale_fr.js" charset="utf-8"></script>
 <link rel="stylesheet" href="site/Agenda/css/style.css" type="text/css" media="screen" />
-
-
+<script src="site/Agenda/js/jquerymin.js" type="text/javascript"></script>
 </head>
 
 <body onload="init();">
@@ -36,4 +36,7 @@
 		<div class="dhx_cal_header"></div>
 		<div class="dhx_cal_data"></div>
 	</div>
+	
 </body>
+<script src="site/Agenda/js/Config.js" type="text/javascript" charset="utf-8"></script>
+</html>

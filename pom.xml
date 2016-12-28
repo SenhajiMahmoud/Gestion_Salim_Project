@@ -21,6 +21,8 @@
 		<jdk.version>1.8</jdk.version>
 		<assertj.version>1.2.0</assertj.version>
 		<spring.version>4.2.4.RELEASE</spring.version>
+		<hibernate-core.version>5.1.0.Final</hibernate-core.version>
+		<hibernate.version>4.0.1.Final</hibernate.version>
 	</properties>
 
 	<dependencies>
@@ -55,6 +57,35 @@
 			</exclusions>
 		</dependency>
 		
+		<!-- hibernate -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>${hibernate.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate.common</groupId>
+			<artifactId>hibernate-commons-annotations</artifactId>
+			<version>${hibernate.version}</version>
+			<classifier>tests</classifier>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate.javax.persistence</groupId>
+			<artifactId>hibernate-jpa-2.0-api</artifactId>
+			<version>1.0.1.Final</version>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-entitymanager</artifactId>
+			<version>${hibernate.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.validation</groupId>
+			<artifactId>validation-api</artifactId>
+			<version>1.0.0.GA</version>
+			<scope>provided</scope>
+		</dependency>
+		
 	</dependencies>
 
 	
@@ -76,5 +107,6 @@
   <modules>
     <module>core</module>
     <module>webSite</module>
+    <module>Commun</module>
   </modules>
 </project>
