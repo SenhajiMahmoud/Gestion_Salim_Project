@@ -19,7 +19,7 @@
 
 	<context:annotation-config />
 	
-	  <tx:annotation-driven /> 
+	<tx:annotation-driven /> 
 	
 	<mvc:annotation-driven />
 
@@ -27,33 +27,19 @@
 
 	<context:property-placeholder location="classpath:configApp.properties" />
 
-	<bean id="transactionManager"
-		class="org.springframework.orm.hibernate4.HibernateTransactionManager">
+	<bean id="transactionManager" class="org.springframework.orm.hibernate4.HibernateTransactionManager">
 		<property name="sessionFactory" ref="sessionFactory" />
 	</bean>
 	
 	 <bean id="handlerMapping" class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping">
-    	<property name="alwaysUseFullPath" value="true"></property>
+    	<property name="alwaysUseFullPath" value="true" />
 	</bean>
 	
 	<bean id="multipartResolver"
 		class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
 		<property name="maxUploadSize" value="${config.maxUploadSize}" />
 	</bean>
-	
-	<bean id="messageSource"
-		class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
-		<property name="basename" value="classpath:messages" />
-	</bean>
 
-	<mvc:interceptors>
-		<bean id="localeChangeInterceptor" class="org.springframework.web.servlet.i18n.LocaleChangeInterceptor">
-			<property name="paramName" value="lang" />
-		</bean>
-	</mvc:interceptors>
-
-	<bean id="localeResolver" class="org.springframework.web.servlet.i18n.CookieLocaleResolver" />
-	
 	<websocket:message-broker
 		application-destination-prefix="/app">
 		<websocket:stomp-endpoint path="/hello">
@@ -62,14 +48,9 @@
 		<websocket:simple-broker prefix="/topic" />
 	</websocket:message-broker>
 	
-	<bean
-		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-		<property name="prefix">
-			<value>/views/</value>
-		</property>
-		<property name="suffix">
-			<value>.jsp</value>
-		</property>
+	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix"> <value>/views/</value> </property>
+		<property name="suffix"> <value>.jsp</value> </property>
 	</bean>
 
 </beans>
