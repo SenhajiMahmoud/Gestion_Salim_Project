@@ -1,0 +1,5 @@
+{ 
+"userName": "User1", 
+"notificationDescription": "Salut tous le monde",
+"typeAlert": "2"
+}
