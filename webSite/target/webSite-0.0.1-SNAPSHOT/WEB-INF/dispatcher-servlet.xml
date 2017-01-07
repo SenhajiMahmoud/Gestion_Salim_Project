@@ -47,7 +47,7 @@
 		</websocket:stomp-endpoint>
 		<websocket:simple-broker prefix="/topic" />
 	</websocket:message-broker>
-	
+
 	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="prefix"> <value>/views/</value> </property>
 		<property name="suffix"> <value>.jsp</value> </property>

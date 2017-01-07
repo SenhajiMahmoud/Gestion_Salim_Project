@@ -1,3 +1,5 @@
 com\Pizzeria\dao\ServicesImpl.class
+com\Pizzeria\services\BnsinessMethodsImpl.class
 com\Pizzeria\dao\Services.class
 com\Pizzeria\services\NotificationService.class
+com\Pizzeria\services\BusinessMethods.class

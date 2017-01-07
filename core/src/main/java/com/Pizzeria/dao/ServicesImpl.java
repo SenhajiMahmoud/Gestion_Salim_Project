@@ -11,6 +11,7 @@ import org.springframework.transaction.annotation.Transactional;
 import com.Pizzeria.models.Candidature;
 import com.Pizzeria.models.Event;
 
+
 /**
  * @author Mahmoud
  *
@@ -27,13 +28,7 @@ public class ServicesImpl implements Services{
 	public void setSf(SessionFactory sf) {
 		this.sf = sf;
 	}
-	
-	@Transactional
-	public int add(Candidature candidate) {
-		sf.getCurrentSession().save(candidate);
-		return 1;
-	}
-	
+
 	@Transactional
 	public List<Candidature> list() {
 		SQLQuery sql = sf.getCurrentSession().createSQLQuery(req);
@@ -48,4 +43,11 @@ public class ServicesImpl implements Services{
 		
 		return null;
 	}
+
+	@Transactional
+	public int add(Candidature candidate) {
+		sf.getCurrentSession().save(candidate);
+		return 1;
+	}
+
 }
