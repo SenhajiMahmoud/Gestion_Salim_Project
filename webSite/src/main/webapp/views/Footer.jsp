@@ -34,5 +34,5 @@
 						<span>www.fb.com</span>
 						<span>Portable: 0698956751</span> 
 	</div>
-</body>
-</html>
+</body> 
+</html>core/target/classes/META-INF/maven/com.pizzeria/core/pom.properties
