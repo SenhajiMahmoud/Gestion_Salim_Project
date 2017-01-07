@@ -23,7 +23,7 @@
 </head>
 <body>
 	<div class="footer">
-		  <span >Adresse:		</span><br/>
+		<!-- <span >Adresse:		</span><br/>
 						
 						<span>	Phone:			</span>
 					
@@ -32,7 +32,7 @@
 						<span>Suivez Nous sur:</span>
 						<span>Contacter Nous:</span>
 						<span>www.fb.com</span>
-						<span>Portable: 0698956751</span>  
+						<span>Portable: 0698956751</span> -->
 	</div>
 </body>
 </html>
