@@ -2,14 +2,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" href="site/css/StyleHeader.css"  />
+	<link rel="stylesheet" href="site/Commun/CSS/StyleHeader.css"  />
 	
 	<link   rel='stylesheet' 
         id='theme-style-css'
-	    href='site/BarreReseauSociaux/cssResSociaux/resSociaux.css'
+	    href='site/Commun/CSS/resSociaux.css'
 	    type='text/css' 
         media='screen' />
-		
+		<script type="text/javascript">
+			var s = document.getElementById("langSwitchh");
+			
+		</script>
 </head>
 <body>
 	
@@ -20,7 +23,7 @@
 				<span class="margin"><a href="connexionPage.do"><spring:message  code='Menu.connexion' /></a></span>
 		</nav>  
 		
-		<a id="nav-logo" href="index.jsp" title="WinWin" > <img alt="" src="site/img/win.png" /> </a> 
+		<a id="nav-logo" href="index.jsp" title="WinWin" > <img alt="" src="site/Commun/Images/win.png" /> </a> 
 	 
 		<div class="reseaux">
 				<div class="header_inner">
@@ -31,7 +34,7 @@
 										    href="https://twitter.com/eudonet_crm"
 										    title="Win"> 
 											
-											<img src="site/BarreReseauSociaux/uploads/2013/08/twitter_header.png"/>
+											<img src="site/Commun/Images/twitter_header.png"/>
 										</a>
 									</li>
 									<li>
@@ -39,7 +42,7 @@
 											href="https://www.facebook.com/Eudonet"
 											title="PizzeriaWin"> 
 											
-											<img src="site/BarreReseauSociaux/uploads/2013/08/facebook_header.png" />
+											<img src="site/Commun/Images/facebook_header.png" />
 										</a>
 									</li>
 								</ul>
@@ -68,7 +71,7 @@
 					
 					<div class="page-header__lang-switch lang-switch cc-dropdown" style="margin-top: 20px;">
 							
-							<a href="#" class="cc-dropdown__button lang-switch__button">
+							<a href="#" id="langSwitchh" class="cc-dropdown__button lang-switch__button">
 			                    <i class="lang-switch__globe"></i>
 			                    <span class="lang-switch__current"><spring:message code='Menu.langue' /></span>
 			                    <i class="icon-caret-small--blue"></i>
@@ -76,11 +79,11 @@
 	                	
 		                    <ul class="dropdown__menu-Inter">
 		                        <li>
-		                        	<img alt="" src="site/img/Flag_of_France.png" class="taille" />
+		                        	<img alt="" src="site/Commun/Images/Flag_of_France.png" class="taille" />
 		                        	<a href="?lang=fr" class="cc-dropdown__menu-link">Francais</a>
 		                        </li>
 		                        <li>
-		                        	<img alt="" src="site/img/Flag_of_United_Kingdom.png" class="taille"  />
+		                        	<img alt="" src="site/Commun/Images/Flag_of_United_Kingdom.png" class="taille"  />
 		                        	<a href="?lang=en" class="cc-dropdown__menu-link">English</a>
 		                        </li>
 		                    </ul>
@@ -89,7 +92,6 @@
 	</header>
 	 
 	</div>
-  <script src="site/js/site.bundle8c60.js"></script>  
-  	<script type="text/javascript" src="site/js/MenuScrollFixe2.js"> </script>
+  	<script type="text/javascript" src="site/Commun/JS/MenuScrollFixe2.js"> </script>
 </body>
 </html>

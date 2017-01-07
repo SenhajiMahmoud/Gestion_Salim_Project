@@ -12,19 +12,26 @@
     </servlet>
 
     <servlet-mapping>
+    
+        <servlet-name>dispatcher</servlet-name>
+        <url-pattern>/winwin/*</url-pattern>
+
+    </servlet-mapping>
+    
+    <servlet-mapping>
+    
         <servlet-name>dispatcher</servlet-name>
         <url-pattern>*.do</url-pattern>
-		
 
     </servlet-mapping>
 
   <context-param>
         <param-name>contextConfigLocation</param-name>
         <param-value>
-
+        	/WEB-INF/configMail.xml
+        	/WEB-INF/configDataBase.xml
         	/WEB-INF/dispatcher-servlet.xml
-        	/WEB-INF/WebSockett.xml
-        	
+        	/WEB-INF/internationalisation_I18N.xml
         </param-value>
         
     </context-param> 

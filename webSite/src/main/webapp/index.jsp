@@ -3,14 +3,16 @@
 <head>
 	<title>PizzeriaWinWin</title>
 	
-	<link rel="stylesheet" href="site/css/IndexCSS.css"/> 
-     
+	<link rel="stylesheet" href="site/Commun/CSS/IndexCSS.css"/> 
+    <link rel="stylesheet" href="site/Notification/css/animate.css" />
+	<link rel="stylesheet" href="site/Notification/css/style.css" />
+    <script src="site/Notification/js/connexionSocket.js"></script>
 </head>
-<body>
+<body onload="connect();">
 
 		<div id="Intro" >
 			<span class="logo"> 
-				<img src="site/img/home/win.png" alt="WinWin"> 
+				<img src="site/Commun/Images/win.png" alt="WinWin"> 
 			</span>
 			<div class="imgTrans"></div>
 		</div>
@@ -68,9 +70,16 @@
 			</tr>
 		</table>
 	</div>
-					<!-- script -->
-	<script src="site/js/site.bundle8c60.js"></script>
-	<script src="site/js/MenuScrollFixe.js" type="text/javascript" > </script>
+	
+        
+         <div class="notiff" ></div>
+        
+        
+        <script src="site/Notification/js/sockjs.js"></script>
+    	<script src="site/Notification/js/stomp.js"></script>
+        <script src="site/Commun/JS/jquerymin.js"></script>
+		<script src="site/Notification/js/mustache.js"></script>
+		<script src="site/Notification/js/notif.js"></script>
 
 </body>
 </html>
