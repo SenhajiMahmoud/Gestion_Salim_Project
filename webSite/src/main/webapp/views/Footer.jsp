@@ -23,7 +23,7 @@
 </head>
 <body>
 	<div class="footer">
-	   <!-- <span >Adresse:		</span><br/>
+	   <!-- <span >TestAdresse:		</span><br/>
 						
 						<span>	Phone:			</span>
 					
