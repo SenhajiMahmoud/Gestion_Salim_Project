@@ -1,4 +1,4 @@
-package com.Pizzeria.business;
+package com.Pizzeria.controllers;
 
 import javax.mail.MessagingException;
 

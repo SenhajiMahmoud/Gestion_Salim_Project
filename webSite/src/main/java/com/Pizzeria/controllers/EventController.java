@@ -1,4 +1,4 @@
-package com.Pizzeria.business;
+package com.Pizzeria.controllers;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
