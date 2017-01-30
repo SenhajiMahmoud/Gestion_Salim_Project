@@ -17,8 +17,8 @@ import com.Pizzeria.entities.Candidature;
 @Service
 public class PizzeriaServicesImpl implements PizzeriaServices{
 	
-//	@Autowired
-//	private ServicesDao dao;
+	@Autowired
+	private ServicesDao dao;
 	
 	private Convert conv;
 	
