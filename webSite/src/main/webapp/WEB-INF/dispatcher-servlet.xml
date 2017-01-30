@@ -31,6 +31,30 @@
 		<property name="sessionFactory" ref="sessionFactory" />
 	</bean>
 	
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
+		destroy-method="close">
+		<property name="driverClassName" value="${config.driverClassName}" />
+		<property name="url" value="${config.url}" />
+		<property name="username" value="${config.postgres.username}" />
+		<property name="password" value="${config.postgres.password}" />
+	</bean>
+
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+		<property name="configLocation">
+			<value>classpath:hibernate.cfg.xml</value>
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">${config.hibernate.dialect}</prop>
+				<prop key="hibernate.show_sql">${config.hibernate.show_sql}</prop>
+				<prop key="hibernate.hbm2ddl.auto">${config.hbm2ddl.auto}</prop>
+			</props>
+		</property>
+	</bean>
+
+
 	 <bean id="handlerMapping" class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping">
     	<property name="alwaysUseFullPath" value="true" />
 	</bean>

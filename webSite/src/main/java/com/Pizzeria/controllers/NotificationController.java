@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import com.Pizzeria.Dto.NotificationDto;
 import com.Pizzeria.Methods.BusinessMethods;
 import com.Pizzeria.Methods.NotificationService;
-import com.Pizzeria.services.Services;
+import com.Pizzeria.service.Services;
 
 /**
  * @author Mahmoud

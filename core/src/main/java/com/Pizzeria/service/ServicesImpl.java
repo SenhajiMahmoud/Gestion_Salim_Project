@@ -1,4 +1,4 @@
-package com.Pizzeria.services;
+package com.Pizzeria.service;
 
 import java.util.List;
 

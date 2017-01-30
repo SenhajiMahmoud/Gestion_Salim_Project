@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.Pizzeria.Dto.CandidatureDto;
 import com.Pizzeria.Methods.BusinessMethods;
-import com.Pizzeria.services.Services;
+import com.Pizzeria.service.Services;
 
 /**
  * @author Mahmoud
@@ -18,8 +18,10 @@ import com.Pizzeria.services.Services;
  */
 @Controller
 public class CandidatureController {
+	
 	@Autowired
 	private BusinessMethods BMethods;
+	
 	@Autowired
 	private Services service;
 	
