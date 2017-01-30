@@ -9,7 +9,7 @@ import com.Pizzeria.Dto.EventDto;
  * @author Mahmoud
  *
  */
-public interface Services {
+public interface PizzeriaServices {
 	public void add(CandidatureDto candidate);
 //	public List<CandidatureDto> list();
 //	public List<EventDto> getEvent();

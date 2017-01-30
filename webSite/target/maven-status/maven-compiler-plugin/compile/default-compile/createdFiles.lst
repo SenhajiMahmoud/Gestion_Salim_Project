@@ -1,5 +1,4 @@
-com\Pizzeria\business\CandidatureController.class
-com\Pizzeria\business\PizzeriaController.class
-com\Pizzeria\business\EventController.class
-com\Pizzeria\business\NotificationController$1.class
-com\Pizzeria\business\NotificationController.class
+com\Pizzeria\controllers\CandidatureController.class
+com\Pizzeria\controllers\PizzeriaController.class
+com\Pizzeria\controllers\EventController.class
+com\Pizzeria\controllers\NotificationController.class

@@ -1,12 +1,10 @@
 package com.Pizzeria.service;
 
-import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.Pizzeria.Dto.CandidatureDto;
-import com.Pizzeria.Dto.EventDto;
 import com.Pizzeria.converters.Convert;
 import com.Pizzeria.dao.ServicesDao;
 import com.Pizzeria.entities.Candidature;
@@ -17,10 +15,10 @@ import com.Pizzeria.entities.Candidature;
  *
  */
 @Service
-public class ServicesImpl implements Services{
+public class PizzeriaServicesImpl implements PizzeriaServices{
 	
-	@Autowired
-	private ServicesDao dao;
+//	@Autowired
+//	private ServicesDao dao;
 	
 	private Convert conv;
 	
@@ -29,7 +27,7 @@ public class ServicesImpl implements Services{
 		System.out.println("ok");
 		Candidature cand = conv.candidatureConvertToDao(candidate);
 		System.out.println("ok2");
-		dao.add(cand);
+//		dao.add(cand);
 	}
 
 //	@Override

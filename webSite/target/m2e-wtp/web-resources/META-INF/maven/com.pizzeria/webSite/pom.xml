@@ -40,7 +40,6 @@
 			<version>${taglibs.version}</version>
 		</dependency>
 
-
 		<!-- Spring -->
 		<dependency>
 			<groupId>org.springframework</groupId>

@@ -1,5 +1,6 @@
-com\Pizzeria\dao\ServicesImpl.class
-com\Pizzeria\services\BnsinessMethodsImpl.class
-com\Pizzeria\dao\Services.class
-com\Pizzeria\services\NotificationService.class
-com\Pizzeria\services\BusinessMethods.class
+com\Pizzeria\Methods\NotificationService.class
+com\Pizzeria\service\PizzeriaServicesImpl.class
+com\Pizzeria\service\PizzeriaServices.class
+com\Pizzeria\converters\Convert.class
+com\Pizzeria\Methods\BnsinessMethodsImpl.class
+com\Pizzeria\Methods\BusinessMethods.class

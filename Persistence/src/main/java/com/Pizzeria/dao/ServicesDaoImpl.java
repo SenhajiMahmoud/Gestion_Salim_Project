@@ -1,15 +1,12 @@
 package com.Pizzeria.dao;
 
-import java.util.List;
 
-import org.hibernate.SQLQuery;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.Pizzeria.entities.Candidature;
-import com.Pizzeria.entities.Event;
 
 
 
@@ -17,12 +14,12 @@ import com.Pizzeria.entities.Event;
  * @author Mahmoud
  *
  */
-@Service
+@Repository
 public class ServicesDaoImpl implements ServicesDao{
 	
 	@Autowired
 	private SessionFactory sf;
-	private String req = "select * from TB_candidature";
+//	private String req = "select * from TB_candidature";
 
 	
 

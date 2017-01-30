@@ -22,7 +22,7 @@
 		
 		<!-- <mapping resource="com/Pizzeria/models/Candidature.hbm.xml"/> -->
 		
-		<mapping class="com.Pizzeria.models.Candidature"/>
+		<mapping class="com.Pizzeria.entities.Candidature" />
 		
 	</session-factory>
 </hibernate-configuration>

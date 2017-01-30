@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.Pizzeria.service.Services;
+import com.Pizzeria.service.PizzeriaServices;
 
 /**
  * @author Mahmoud
@@ -18,8 +18,8 @@ import com.Pizzeria.service.Services;
 @Controller
 public class PizzeriaController {
 
-	@Autowired
-	private Services service;
+//	@Autowired
+//	private PizzeriaServices service;
 //	private List<Candidature> ListCand;
 
 

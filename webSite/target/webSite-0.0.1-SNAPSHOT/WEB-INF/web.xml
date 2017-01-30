@@ -29,7 +29,6 @@
         <param-name>contextConfigLocation</param-name>
         <param-value>
         	/WEB-INF/configMail.xml
-        	/WEB-INF/configDataBase.xml
         	/WEB-INF/dispatcher-servlet.xml
         	/WEB-INF/internationalisation_I18N.xml
         </param-value>

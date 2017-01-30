@@ -1,1 +1,6 @@
-org\Persistence\App.class
+com\Pizzeria\entities\User.class
+com\Pizzeria\entities\Event.class
+com\Pizzeria\entities\Candidature.class
+com\Pizzeria\dao\ServicesDaoImpl.class
+com\Pizzeria\entities\Notification.class
+com\Pizzeria\dao\ServicesDao.class

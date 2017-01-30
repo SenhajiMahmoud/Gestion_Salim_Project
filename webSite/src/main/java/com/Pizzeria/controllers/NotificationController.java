@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import com.Pizzeria.Dto.NotificationDto;
 import com.Pizzeria.Methods.BusinessMethods;
 import com.Pizzeria.Methods.NotificationService;
-import com.Pizzeria.service.Services;
+import com.Pizzeria.service.PizzeriaServices;
 
 /**
  * @author Mahmoud
@@ -24,8 +24,8 @@ public class NotificationController{
 	@Autowired
 	private SimpMessagingTemplate template;
 	
-	@Autowired
-	private Services service;
+//	@Autowired
+//	private PizzeriaServices service;
 	
 	@Autowired
 	private BusinessMethods BMethods;
