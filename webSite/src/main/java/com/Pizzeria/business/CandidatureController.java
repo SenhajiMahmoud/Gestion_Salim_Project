@@ -8,8 +8,9 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import com.Pizzeria.models.Candidature;
-import com.Pizzeria.services.BusinessMethods;
+import com.Pizzeria.Dto.CandidatureDto;
+import com.Pizzeria.Methods.BusinessMethods;
+import com.Pizzeria.services.Services;
 
 /**
  * @author Mahmoud
@@ -19,13 +20,16 @@ import com.Pizzeria.services.BusinessMethods;
 public class CandidatureController {
 	@Autowired
 	private BusinessMethods BMethods;
+	@Autowired
+	private Services service;
+	
 
 	@RequestMapping(value = "addCandidature", method = RequestMethod.POST)
-	public String addCandidature(@ModelAttribute Candidature candidature) throws MessagingException {
+	public String addCandidature(@ModelAttribute CandidatureDto candidature) throws MessagingException {
 		System.out.println("Candidature");
-		// service.add(candidature);
-		BMethods.envoiMailCandidat("sema_ma@hotmail.fr"/* candidature.getEmail() */, "Pizzeria_Win_Win@hotmail.com", candidature);
-		BMethods.envoiMailAdmin("sema_ma@hotmail.fr", "Pizzeria_Win_Win@hotmail.com", candidature);
+		service.add(candidature);
+//		BMethods.envoiMailCandidat("sema_ma@hotmail.fr"/* candidature.getEmail() */, "Pizzeria_Win_Win@hotmail.com", candidature);
+//		BMethods.envoiMailAdmin("sema_ma@hotmail.fr", "Pizzeria_Win_Win@hotmail.com", candidature);
 
 		return "redirect:/addC.do";
 	}
