@@ -1,4 +1,4 @@
-package com.PizzeriaWin.entities;
+package com.Pizzeria.entities;
 
 
 import javax.persistence.Column;
@@ -18,11 +18,9 @@ public class Candidature{
 	@Column(name = "id_candidat")
 	private int id;
 
-	@Column(name = "civilite")
-	private String civilite;
+	@Column private String civilite;
 
-	@Column(name = "poste")
-	private String poste;
+	@Column private String poste;
 
 	public int getId() {
 		return id;

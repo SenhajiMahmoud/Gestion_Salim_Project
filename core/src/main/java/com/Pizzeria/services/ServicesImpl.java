@@ -9,7 +9,7 @@ import com.Pizzeria.Dto.CandidatureDto;
 import com.Pizzeria.Dto.EventDto;
 import com.Pizzeria.converters.Convert;
 import com.Pizzeria.dao.ServicesDao;
-import com.PizzeriaWin.entities.Candidature;
+import com.Pizzeria.entities.Candidature;
 
 
 /**

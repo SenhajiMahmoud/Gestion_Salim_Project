@@ -2,8 +2,8 @@ package com.Pizzeria.dao;
 
 import java.util.List;
 
-import com.PizzeriaWin.entities.Candidature;
-import com.PizzeriaWin.entities.Event;
+import com.Pizzeria.entities.Candidature;
+import com.Pizzeria.entities.Event;
 
 /**
  * @author Mahmoud

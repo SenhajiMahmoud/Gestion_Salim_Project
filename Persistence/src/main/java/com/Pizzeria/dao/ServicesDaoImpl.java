@@ -8,8 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.PizzeriaWin.entities.Candidature;
-import com.PizzeriaWin.entities.Event;
+import com.Pizzeria.entities.Candidature;
+import com.Pizzeria.entities.Event;
 
 
 

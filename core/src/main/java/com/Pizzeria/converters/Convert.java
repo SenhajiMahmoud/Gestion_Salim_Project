@@ -1,7 +1,7 @@
 package com.Pizzeria.converters;
 
 import com.Pizzeria.Dto.CandidatureDto;
-import com.PizzeriaWin.entities.Candidature;
+import com.Pizzeria.entities.Candidature;
 
 public class Convert {
 		public Candidature candidatureConvertToDao(CandidatureDto candidate){
