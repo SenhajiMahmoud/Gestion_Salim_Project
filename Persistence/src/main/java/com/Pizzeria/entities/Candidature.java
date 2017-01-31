@@ -22,6 +22,19 @@ public class Candidature{
 
 	@Column private String poste;
 
+	
+	
+	public Candidature() {
+		super();
+	}
+
+	public Candidature(int id, String civilite, String poste) {
+		super();
+		this.id = id;
+		this.civilite = civilite;
+		this.poste = poste;
+	}
+
 	public int getId() {
 		return id;
 	}

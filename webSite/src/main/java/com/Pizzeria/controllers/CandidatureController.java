@@ -29,7 +29,7 @@ public class CandidatureController {
 	@RequestMapping(value = "addCandidature", method = RequestMethod.POST)
 	public String addCandidature(@ModelAttribute CandidatureDto candidature) throws MessagingException {
 		System.out.println("Candidature");
-//		service.add(candidature);
+		service.add(candidature);
 //		BMethods.envoiMailCandidat("sema_ma@hotmail.fr"/* candidature.getEmail() */, "Pizzeria_Win_Win@hotmail.com", candidature);
 //		BMethods.envoiMailAdmin("sema_ma@hotmail.fr", "Pizzeria_Win_Win@hotmail.com", candidature);
 

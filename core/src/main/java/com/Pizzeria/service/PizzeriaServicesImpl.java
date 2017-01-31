@@ -20,14 +20,16 @@ public class PizzeriaServicesImpl implements PizzeriaServices{
 	@Autowired
 	private ServicesDao dao;
 	
-	private Convert conv;
+	private  Convert conv;
+	public PizzeriaServicesImpl() {
+		conv = new Convert();
+	}
 	
 	@Override
 	public void add(CandidatureDto candidate) {
-		System.out.println("ok");
+		
 		Candidature cand = conv.candidatureConvertToDao(candidate);
-		System.out.println("ok2");
-//		dao.add(cand);
+		dao.add(cand);
 	}
 
 //	@Override
