@@ -1,0 +1,4 @@
+com\Pizzeria\controllers\CandidatureController.class
+com\Pizzeria\controllers\PizzeriaController.class
+com\Pizzeria\controllers\EventController.class
+com\Pizzeria\controllers\NotificationController.class

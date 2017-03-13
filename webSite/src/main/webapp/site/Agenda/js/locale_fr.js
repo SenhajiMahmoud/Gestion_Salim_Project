@@ -1,7 +1,8 @@
 scheduler.locale={
+		
 	date:{
 		month_full:["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"],
-		month_short:["Jan", "Fev", "Mar", "Avr", "Mai", "Juin", "Juil", "Aou", "Sep", "Oct", "Nov", "Dec"],	
+		month_short:["Jan", "Fev", "Mar", "Avr", "Mai", "Juin", "Juil", "Aout", "Sep", "Oct", "Nov", "Dec"],	
 		day_full:["Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi"],
     	day_short:["Dim", "Lun", "Mar", "Mer", "Jeu", "Ven", "Sam"]
     },
