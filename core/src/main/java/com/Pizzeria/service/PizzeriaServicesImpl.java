@@ -1,13 +1,17 @@
 package com.Pizzeria.service;
 
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.Pizzeria.Dto.CandidatureDto;
+import com.Pizzeria.Dto.EventDto;
 import com.Pizzeria.converters.Convert;
 import com.Pizzeria.dao.ServicesDao;
 import com.Pizzeria.entities.Candidature;
+import com.Pizzeria.entities.Event;
 
 
 /**
@@ -20,7 +24,7 @@ public class PizzeriaServicesImpl implements PizzeriaServices{
 	@Autowired
 	private ServicesDao dao;
 	
-	private  Convert conv;
+	private Convert conv;
 	public PizzeriaServicesImpl() {
 		conv = new Convert();
 	}
@@ -31,6 +35,20 @@ public class PizzeriaServicesImpl implements PizzeriaServices{
 		Candidature cand = conv.candidatureConvertToDao(candidate);
 		dao.add(cand);
 	}
+
+	@Override
+	public String listEvent(int id) {
+		String Event = dao.Event(id);
+		return Event;
+	}
+
+	@Override
+	public void addEvent(EventDto event) {
+		Event eventEntity = conv.EventDtaToDao(event);
+		dao.addEvent(eventEntity);
+	}
+
+	 
 
 //	@Override
 //	public List<CandidatureDto> list() {

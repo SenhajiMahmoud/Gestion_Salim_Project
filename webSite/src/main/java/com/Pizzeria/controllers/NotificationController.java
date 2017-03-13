@@ -7,13 +7,12 @@ import org.springframework.messaging.handler.annotation.MessageMapping;
 import org.springframework.messaging.handler.annotation.SendTo;
 import org.springframework.messaging.simp.SimpMessagingTemplate;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.Pizzeria.Dto.NotificationDto;
 import com.Pizzeria.Methods.BusinessMethods;
-import com.Pizzeria.Methods.NotificationService;
-import com.Pizzeria.service.PizzeriaServices;
+import com.Pizzeria.models.TypeNotification;
 
 /**
  * @author Mahmoud
@@ -33,15 +32,13 @@ public class NotificationController{
 	
 	@MessageMapping("/hello")
 	@SendTo("/topic/notification")
-	public NotificationService hello(NotificationDto u) {
-		System.out.println(u.getUserName() + '-' + u.getNotificationDescription());
-		return new NotificationService(u.getUserName() + ',' + u.getNotificationDescription());
+	public void hello(NotificationDto u) {
 	}
 
-	@RequestMapping("/envMessage")
-	public String sendNotification(@RequestBody NotificationDto u) throws MessagingException {
+	@RequestMapping("/envMessage/{typeNotif}/{demand}")
+	public String sendNotification(@PathVariable("typeNotif") TypeNotification TNotif
+							, @PathVariable("demand") String d) throws MessagingException {
 		String infos = "";
-
 //		switch (u.getTypeAlert()) {
 //		case Retard:
 //				infos = "Retard";

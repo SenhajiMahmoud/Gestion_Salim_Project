@@ -1,6 +1,5 @@
 package com.Pizzeria.service;
 
-import java.util.List;
 
 import com.Pizzeria.Dto.CandidatureDto;
 import com.Pizzeria.Dto.EventDto;
@@ -11,7 +10,8 @@ import com.Pizzeria.Dto.EventDto;
  */
 public interface PizzeriaServices {
 	public void add(CandidatureDto candidate);
-//	public List<CandidatureDto> list();
+	public String listEvent(int id);
+	public void addEvent(EventDto event);
 //	public List<EventDto> getEvent();
 	
 }

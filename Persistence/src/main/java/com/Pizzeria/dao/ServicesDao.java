@@ -1,6 +1,5 @@
 package com.Pizzeria.dao;
 
-import java.util.List;
 
 import com.Pizzeria.entities.Candidature;
 import com.Pizzeria.entities.Event;
@@ -11,7 +10,8 @@ import com.Pizzeria.entities.Event;
  */
 public interface ServicesDao {
 	public int add(Candidature candidate);
-//	public List<Candidature> list();
+	public String Event(int id);
+	public void addEvent(Event eventEntity);
 //	public List<Event> getEvent();
 	
 }
