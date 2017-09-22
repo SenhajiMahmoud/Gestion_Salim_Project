@@ -1,11 +1,12 @@
  var stompClient = null;
 
 function connect() {
-		var socket = new SockJS('http://localhost:8080/webSite/winwin/hello');
+		var socket = new SockJS('http://localhost:90/webSite/winwin/hello');
 	    	stompClient = Stomp.over(socket);
 	           
 	        stompClient.connect({}, function(frame){
 	        stompClient.subscribe('/topic/notification', function(Notiff) {
+	        	console.log(Notiff);
 	            		affiche(JSON.parse(Notiff.body).content);
 					});	
 	            });

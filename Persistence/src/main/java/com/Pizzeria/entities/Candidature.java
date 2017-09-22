@@ -8,7 +8,6 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-
 @Entity
 @Table(name = "tb_candidature")
 public class Candidature{
@@ -21,8 +20,6 @@ public class Candidature{
 	@Column private String civilite;
 
 	@Column private String poste;
-
-	
 	
 	public Candidature() {
 		super();

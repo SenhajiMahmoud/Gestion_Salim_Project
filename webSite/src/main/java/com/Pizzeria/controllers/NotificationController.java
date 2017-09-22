@@ -35,9 +35,13 @@ public class NotificationController{
 	public void hello(NotificationDto u) {
 	}
 
-	@RequestMapping("/envMessage/{typeNotif}/{demand}")
-	public String sendNotification(@PathVariable("typeNotif") TypeNotification TNotif
-							, @PathVariable("demand") String d) throws MessagingException {
+//	@RequestMapping("/envMessage/{typeNotif}/{demand}")
+	@RequestMapping("/envMessage")
+//	public String sendNotification(@PathVariable("typeNotif") TypeNotification TNotif
+//							, @PathVariable("demand") String d) throws MessagingException {
+	public String sendNotification() throws MessagingException {
+	
+		
 		String infos = "";
 //		switch (u.getTypeAlert()) {
 //		case Retard:
@@ -59,7 +63,7 @@ public class NotificationController{
 //			System.out.println("------>Facture");
 //			BMethods.envoiMail("sema_ma@hotmail.fr", "Pizzeria_Win_Win@hotmail.com", infos);
 //		}
-//		template.convertAndSend("/topic/notification", new NotificationService(u.getUserName() + ',' + u.getNotificationDescription()));
+		template.convertAndSend("/topic/notification", new Sendmess("Pizza, 10") );
 		return "decNotif";
 	}
 

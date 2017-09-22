@@ -12,7 +12,7 @@
 
 		<div id="Intro" >
 			<span class="logo"> 
-				<img src="site/Commun/Images/win.png" alt="WinWin"> 
+				<img src="site/Commun/Images/win.png" alt="WinWin">
 			</span>
 			<div class="imgTrans"></div>
 		</div>
