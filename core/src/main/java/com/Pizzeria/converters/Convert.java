@@ -12,7 +12,7 @@ public class Convert {
 	
 	 
 		public Candidature candidatureConvertToDao(CandidatureDto candidate){
-			Candidature entity = new Candidature() ;
+			Candidature entity = new Candidature();
 			entity.setId(candidate.getId());
 			entity.setCivilite(candidate.getCivilite());
 			entity.setPoste(candidate.getPoste());
@@ -23,7 +23,8 @@ public class Convert {
 			List<EventDto> dto = new ArrayList<>();
 			for (int i = 0; i < eventDao.size(); i++)  {
 				dto.get(i).setId(eventDao.get(i).getId());
-				dto.get(i).setHoraire(eventDao.get(i).getHoraire());
+//				dto.get(i).setHoraire(eventDao.get(i).getHoraire());
+				
 			}
 			return dto;
 		}
@@ -31,7 +32,7 @@ public class Convert {
 		public Event EventDtaToDao(EventDto event){
 			Event entity = new Event();
 			entity.setId(event.getId());
-			entity.setHoraire(event.getHoraire());
+//			entity.setHoraire(event.getHoraire());
 			return entity;
 		}
 }

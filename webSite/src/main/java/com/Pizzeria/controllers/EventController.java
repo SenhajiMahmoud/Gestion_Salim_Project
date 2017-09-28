@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.Pizzeria.Dto.EventDto;
 import com.Pizzeria.service.PizzeriaServices;
 
-
 /**
  * @author Mahmoud
  *
@@ -28,14 +27,17 @@ public class EventController {
 	@ResponseBody
 	public String getEvents(@PathVariable("uId") int id) {
 		String s=service.listEvent(id);
-		System.out.println(s);
-		System.out.println("ok --> " + " " + id);
 		return s;
 	}
 	
-	@RequestMapping(value = "/add", method = RequestMethod.POST)
-	public void addEvents(@RequestBody EventDto event) {
-		service.addEvent(event);
+	@RequestMapping(value = "/add/{startDate}/{endDate}/{text}", method = RequestMethod.POST)
+	public void addEvents(@PathVariable("startDate") String startDate, @PathVariable("endDate") String endDate,  
+			@PathVariable("text") String text, EventDto event) {
+		event.setStart_Event(startDate);
+		event.setEnd_Event(endDate);
+		event.setDescription(text);
+		System.out.println("Description----->" + event.getDescription());
+//		service.addEvent(event);
 	}
 
 }

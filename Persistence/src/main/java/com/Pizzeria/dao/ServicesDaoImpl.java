@@ -1,5 +1,8 @@
 package com.Pizzeria.dao;
 
+import java.util.List;
+
+import org.hibernate.Query;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
@@ -31,8 +34,23 @@ public class ServicesDaoImpl implements ServicesDao{
 
 	@Transactional
 	public String Event(int id) {
-		Event e = (Event) sf.getCurrentSession().load(Event.class, new Integer(id));
-		return e.getHoraire();
+		StringBuffer b = new StringBuffer();
+//		Event e = (Event) sf.getCurrentSession().load(Event.class, new Integer(id));
+		Query query = sf.getCurrentSession().createQuery("from events2 where id_client=1");
+		List<Event> e = query.list();
+		b.append("[");
+		for (Event event : e) {
+			
+			b.append("{text:" + "\"" + event.getDescription() + "\"" + ", start_date:" + "\"" + event.getStart_Event() + "\"" 
+					+ ", end_date:" + "\"" + event.getEnd_Event() + "\"},");
+		}
+		
+		b.append("]");
+		
+//		System.out.println("json------>" + b.toString());
+		
+		return b.toString();
+		
 	}
 
 	@Override

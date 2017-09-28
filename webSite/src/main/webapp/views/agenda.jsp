@@ -7,14 +7,20 @@
 	
 	<link rel="stylesheet" href="site/Agenda/css/dhtmlxscheduler.css" 
 			type="text/css" media="screen" title="no title" charset="utf-8">
+	
 	<link rel="stylesheet" href="site/Agenda/css/style.css" 
 			type="text/css" media="screen" />
+	
 	<script src="site/Agenda/js/dhtmlxscheduler.js" type="text/javascript" charset="utf-8"></script>
+	
 	<script src="site/Agenda/js/dhtmlxscheduler_limit.js" 
 			type="text/javascript" charset="utf-8"></script>
+	
 	<script src="site/Agenda/js/dhtmlxscheduler_minical.js" 
 			type="text/javascript" charset="utf-8"></script>
+	
 	<script src="site/Commun/JS/jquerymin.js" type="text/javascript"></script>
+	
 	<script src="site/Agenda/js/locale_fr.js" charset="utf-8"></script>
 
 </head>
@@ -39,7 +45,7 @@
 			
 		</div>
 		<div class="dhx_cal_header"></div>
-		<div class="dhx_cal_data"></div>
+		<div class="dhx_cal_data"></div> 
 	</div>
 	
 </body>

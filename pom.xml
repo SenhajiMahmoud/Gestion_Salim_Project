@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.pizzeria</groupId>
 	<artifactId>master</artifactId>
@@ -87,21 +88,21 @@
 			<version>1.0.0.GA</version>
 			<scope>provided</scope>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context-support</artifactId>
 			<version>${spring.version}</version>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>javax.mail</groupId>
 			<artifactId>mail</artifactId>
 			<version>${javax.mail.version}</version>
 		</dependency>
-		
-		
-		
+
+
+
 		<!-- Log -->
 		<dependency>
 			<groupId>log4j</groupId>
@@ -120,7 +121,7 @@
 			</exclusions>
 			<scope>runtime</scope>
 		</dependency>
-		
+
 		<!-- Spring -->
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -151,6 +152,7 @@
 			<artifactId>spring-beans</artifactId>
 			<version>${spring.version}</version>
 		</dependency>
+		
 	</dependencies>
 
 
@@ -173,6 +175,6 @@
 		<module>core</module>
 		<module>webSite</module>
 		<module>Commun</module>
-    <module>Persistence</module>
-  </modules>
+		<module>Persistence</module>
+	</modules>
 </project>
